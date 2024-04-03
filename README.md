@@ -1,6 +1,3 @@
-# LK02-Pemlan
-berikut tugas LK02-Konstruktor, Inheritance, Overloading, Relationships
-
 package Pemlan;
 import java.util.ArrayList;
 import java.util.List;
@@ -96,7 +93,6 @@ public class LK02 {
         int pilihanKendaraan = 0;
         Scanner scanner = new Scanner(System.in);
 
-        // Memilih jenis kendaraan
         System.out.println("Pilih jenis kendaraan:");
         System.out.println("1. Bus");
         System.out.println("2. Truk");
@@ -105,7 +101,6 @@ public class LK02 {
 
         Kendaraan kendaraan = null;
 
-        // Membuat objek kendaraan sesuai dengan pilihan
         switch (pilihanKendaraan) {
             case 1:
                 kendaraan = new Bus("B 1234 AB", 25);
@@ -120,7 +115,7 @@ public class LK02 {
 
         int pilihan = 0;
         while (pilihan != 5) {
-            // Menampilkan menu
+
             System.out.println("\nMenu:");
             System.out.println("1. Penumpang Naik (tanpa nama) : ");
             System.out.println("2. Penumpang Naik (dengan nama) : ");
@@ -129,11 +124,9 @@ public class LK02 {
             System.out.println("5. Nama Driver");
             System.out.println("6. Keluar");
 
-            // Meminta input dari pengguna
             System.out.print("Pilih menu (masukkan angka): ");
             pilihan = scanner.nextInt();
 
-            // Proses pemilihan menu
             switch (pilihan) {
                 case 1:
                     kendaraan.penumpangNaik();
